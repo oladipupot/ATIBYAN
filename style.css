@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #12cc7e93; 
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+/* nav menu */
+nav {
+    display: flex;
+    padding: 0 10px;
+    margin-top: -10px;
+    height: 40px;
+}
+nav img{
+    width: 70px;
+    height: 50px;
+
+}
+nav  .po{
+    padding-top: 15px;
+    padding-left: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 1.7rem;
+    padding-left: 40%;
+    padding-top: 15px;
+    color: white;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+nav ul li a:hover{
+    color: green;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+/* home */
+.banner{
+    position: relative;
+    width: 100%; 
+}
+.image{
+    display: grid;
+    width: 100%;
+    height: 50%;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.932);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 1s ease;
+}
+
+.banner:hover .overlay{
+    height: 100%;
+    
+}
+.overlay h2{
+    width: 100%;
+    margin-top: 15%;
+    color: #fff;
+    font-size: 3.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    text-align: center;
+    transform: rotate(-5deg) skew(-5deg);
+}
+.overlay p{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin: 25% 0 0 10%;
+    width: 75%;
+    position: relative;
+    /* letter-spacing: 5px;
+    line-height: 2rem; */
+}
+.overlay button{
+    background-color: transparent;
+    color: rgb(241, 243, 241);
+    padding: 20px;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    border: 2px solid green;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 40%;
+}
+.overlay button:hover{
+    background-color: green;
+    color: white;
+}
+/* about */
+.about{
+    display: flex;
+    flex: 2;
+    margin-top: 10px;
+    padding: 50px;
+    column-gap: 40px;
+}
+ .about .left{
+    flex: 1;
+    margin-top: 50px;
+ }
+ .about .left button{
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 20px;
+ }
+ .about .left button:hover{
+    background-color: green;
+    color: #fff;
+   
+ }
+ .about .left i{
+    color: #0a0a0a;
+    padding: 5px;
+ }
+ .about .left i:hover{
+    color: green;
+    padding: 5px;
+ }
+ .about .right{
+    flex: 1;
+ }
+ .about .right{
+    border-left: 20px #12cc7e93 solid;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.about h2{
+    color: green;
+    font-size: 2.5rem;
+    margin-bottom: 10px; 
+}
+.about .left p{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.about  hr{
+    margin-bottom: 20px;
+    height: 5px;
+    width: 50px;
+    background-color: #12cc7e93;
+    border-radius: 5px;
+}
+.about .right i{
+    color: #0a0a0a;
+    margin-right: 30px;
+}
+.about .right p{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    margin-top: -25px;
+}
+/* program fee/class schedule*/
+.fee{
+    background-color: rgba(34, 139, 34, 0.479);
+    padding: 50px;
+}
+.fee h2{
+    color: green;
+    font-size: 2.5rem;
+    margin-bottom: 10px; 
+    text-align: center;
+    font-family: cursive;
+}
+.fee ul{
+    font-size: 1.5rem;
+}
+.schedule h2{
+    font-size: 2.5rem;
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
+.schedule table{
+    width: 50%;
+    border-collapse: collapse;
+    background-color: rgb(224, 224, 224);
+    margin-left: 25%;
+    margin-bottom: 40px;
+}
+.schedule .sss{
+    background-color: white;
+}
+.schedule tr{
+    height: 50px;
+}
+.schedule td{
+    margin: 20px;
+}
+.schedule table, th, td {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border:1px solid black;
+}
+.schedule thead{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(21, 255, 0, 0.356);
+    color: white;
+}
+/* curriculum */
+.curriculum{
+    background-color: #1da51d59;
+    padding: 5% 5%;
+}
+.curriculum h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.curriculum h4{
+    margin: 10px 0;
+}
+.curriculum div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%;
+    row-gap: 30px;
+}
+.curriculum img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.curriculum  hr{
+    margin: 20px auto 40px auto;
+    height: 3px;
+    width: 50px;
+    background-color: #8A2B1D;
+    border-radius: 5px;
+}
+.curriculum div hr{
+    margin: 10px 0;
+    height: 1px;
+    width: 50px;
+    background-color: #8A2B1D;
+    border-radius: 5px;
+}
+/* gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gal h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.gallery img{
+    width: 400px;
+    height: 300px;
+    border: 2px solid rgba(0, 0, 0, 0.527);
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0 #00000042;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+}
+.gallery img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+/* contact */
+.contact{
+    display: flex;
+    flex: 2;
+    margin-top: 10px;
+    padding: 50px;
+}
+.contact .lefty{
+    flex: 2;
+    background-color: rgba(20, 243, 169, 0.562);
+}
+.contact .righty{
+    flex: 2;
+    background-color: rgba(20, 243, 187, 0.438);
+    padding: 20px;
+}
+.contact h3{
+    text-align: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+    margin-bottom: 30px;
+}
+.contact .lefty h5{
+    font-size: 1rem;
+    margin-bottom: 35px;
+    font-weight: lighter;
+}
+.contact .lefty{
+    padding: 20px;
+}
+.contact .iii{
+    text-align: right;
+    margin-bottom: 20px;
+}
+.contact .lefty i{
+    color: #000000;
+    margin-right: 30px;
+}
+.contact .lefty p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-top: -25px;
+}
+.contact .righty{
+    padding-top: 40px;
+    margin: 20px 0;
+}
+.contact .righty input{
+    width: 50%;
+    height: 50px;
+    border: 1px solid rgba(29, 202, 72, 0.356);
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+.contact textarea{
+    width: 50%;
+    height: 80px;
+    margin-left: 30px;
+    border: 1px solid rgba(29, 202, 72, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+}
+.contact button{
+    background-color: #333;
+    color: #fff;
+    width: 90px;
+    height: 30px;
+    margin-left: 30px;
+    border-radius: 5px;
+    padding: 5px;
+}.contact button:hover{
+    background-color: green;
+    color: #fff;
+}
+.ex{
+    display: flex;
+    align-items: center;
+    background-color: #b6b5b5;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.ex span{
+    position: relative;
+    display: inline-block;
+    flex-shrink: 5;
+    padding: 5px 20px;
+    background-color: rgba(0, 128, 0, 0.651);
+    color: #fff;
+    clip-path: polygon(0 0, 90% 0, 100% 100%,0 100%);
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    nav{
+        display: block;
+      }
+      nav ul{
+        display: none;
+      }
+      nav img, h1{
+        justify-content: center;
+        text-align: center;
+      }  
+      .overlay h2{
+        width: 100%;
+        margin-top: 15%;
+        color: #fff;
+        font-size: 1rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: absolute;
+        text-align: center;
+        transform: rotate(-5deg) skew(-5deg);
+    }
+    .overlay p{
+        text-align: center;
+        color: #fff;
+        font-size: 0.7rem;
+        margin: 25% 0 0 10%;
+        width: 75%;
+        position: relative;
+    }
+    .overlay button{
+        background-color: transparent;
+        color: rgb(241, 243, 241);
+        padding: 5px;
+        font-size: 0.5rem;
+        margin-top: 20px;
+        border: 2px solid green;
+        border-radius: 10px;
+        position: absolute;
+        margin-left: 40%;
+    }
+    .about{
+        display: block;
+        
+    }
+    .about .left p{
+        font-size: 1rem;
+    }
+    .about .right p{
+        font-size: 1rem;
+    }
+    .about h2{
+        font-size: 1.5rem;
+    }
+    .about .left{
+        margin-top: -50px;
+        margin-bottom: 30px;
+    }
+    .fee h2{
+        color: green;
+        font-size: 1.5rem;
+        margin-bottom: 10px; 
+        text-align: center;
+        font-family: cursive;
+    }
+    .fee ul{
+        font-size: 1rem;
+    }
+    .schedule h2{
+        font-size: 1.5rem;
+        color: green;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .schedule table{
+        width: 50%;
+        border-collapse: collapse;
+        background-color: rgb(224, 224, 224);
+        margin-left: 25%;
+        margin-bottom: 40px;
+    }
+    .schedule tr{
+        height: 60px;
+    }
+    .schedule table, th, td {
+        text-align: center;
+        font-size: 0.7rem;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        border:1px solid black;
+    }
+    .curriculum div{
+       display: block;
+    }
+    .curriculum aside{
+        margin-top: 10px;
+    }
+    .contact{
+        display: block;
+    }
+}
